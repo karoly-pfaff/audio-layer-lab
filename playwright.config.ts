@@ -2,6 +2,13 @@ import { defineConfig, devices } from '@playwright/test';
 
 const baseURL = 'http://127.0.0.1:4173';
 
+const firefoxAutomationPreferences = {
+  // Headless Linux runners have no interactive audio session. Keep native Web Audio enabled while
+  // removing autoplay and background-tab policy from the browser-infrastructure boundary.
+  'media.autoplay.block-webaudio': false,
+  'media.block-autoplay-until-in-foreground': false,
+};
+
 export default defineConfig({
   testDir: './tests/e2e',
   outputDir: 'output/playwright/test-results',
@@ -26,7 +33,10 @@ export default defineConfig({
     },
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        launchOptions: { firefoxUserPrefs: firefoxAutomationPreferences },
+      },
     },
     {
       name: 'webkit',
