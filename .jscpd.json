@@ -1,0 +1,16 @@
+{
+  "threshold": 0,
+  "minLines": 8,
+  "minTokens": 100,
+  "mode": "strict",
+  "reporters": ["console", "threshold"],
+  "pattern": "sources/**/*.{ts,tsx}",
+  "ignore": [
+    "**/build/**",
+    "**/coverage/**",
+    "**/node_modules/**",
+    "**/*.test.ts",
+    "**/*.d.ts",
+    "**/test-setup.ts"
+  ]
+}

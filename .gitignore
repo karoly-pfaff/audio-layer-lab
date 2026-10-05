@@ -1,0 +1,48 @@
+# Dependencies
+node_modules
+
+# Build and test output
+build/
+coverage/
+output/
+blob-report/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Desktop.ini
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local config
+*.local
+
+# Cache
+.cache/
+.eslintcache
+.vite/
+.vitest/
+.playwright-cli/
