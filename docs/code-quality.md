@@ -52,6 +52,8 @@ normal test suite, and the browser review contract is documented in
 - Chromium and Firefox own native Web Audio decoding coverage. WebKit owns cross-engine UI,
   responsive, persistence, snapshot, and preset coverage; its Windows test runtime uses the
   smallest possible test-only Web Audio shim because that runtime omits the browser API.
+- Linux CI provides a local PulseAudio null sink so Firefox exercises its native Web Audio graph
+  without depending on physical runner audio hardware.
 - Keep failure screenshots, videos, traces, and the HTML report under `output/playwright/`.
 
 ## Review checklist
