@@ -34,7 +34,7 @@
   "dependencies": {
     "music-metadata": "^11.12.3",
     "music-tempo": "^1.0.3",
-    "react": "^18.3.1",
+    "react": "^19.3.0",
     "react-dom": "^18.3.1",
     "zustand": "^4.5.4"
   },
@@ -44,7 +44,7 @@
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^24.0.0",
-    "@types/react": "^18.3.3",
+    "@types/react": "^19.3.0",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^6.1.1",
     "@vitest/coverage-v8": "^5.0.3",
